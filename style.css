@@ -313,7 +313,7 @@ body {
     margin-left: 0%;
   }
   
-  #testimonials-slider .card-body .testimonials-image {
+  #testimonials-slider .testimonials-image {
     display: none;
   }
 }
