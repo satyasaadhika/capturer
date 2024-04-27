@@ -34,21 +34,6 @@
 .navbar-nav li a{
     font-size: 1.3rem;
 }
-@media (max-width:800px) {
-  .header{
-    min-height: 450px;
-    width: 100%;
-}
-  .navbar-brand{
-    margin-left: 1%;
-}
- #navbarNav{
-  margin-left: 3%;
-}
-.navbar-nav li {
-  margin-left: 10%;
-}
-}
 .container{
     margin-top: 2%;
 }
@@ -264,6 +249,13 @@
   }
   .container2 .right img{
     width: 100%;
+  }
+  .header{
+    min-height: 450px;
+    width: 100%;
+  }
+  .gallery__btn{
+    margin-left: 0%;
   }
 }
 
