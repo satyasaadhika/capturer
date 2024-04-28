@@ -16,14 +16,38 @@
 body {
   width: 100%;
 }
-
-.header {
-  min-height: 800px;
-  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url(assets/header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.slide .carousel-item h5{
+  margin-bottom: 3%;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  font-family: var(--header-font);
 }
 
+ .carousel-item .text-slide{
+  margin-bottom: 50%;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: var(--header-font);
+}
+.button button{
+  margin-bottom: 40%;
+}
+.collapse{
+  margin-left: 45%;
+}
+.container-fluid img{
+  width: 200px;
+  margin-left: 10%;
+}
+.nav-link{
+  margin-left: 20%;
+}
+#navbarNavAltMarkup .navbar-nav a{
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  font-family: var(--header-font);
+  font-weight: 600;
+}
 .section__container img {
   display: flex;
   width: 200px;
@@ -51,21 +75,6 @@ body {
   justify-content: space-around;
 }
 
-.navbar-brand {
-  margin-left: 5%;
-}
-
-#navbarNav {
-  margin-left: 20%;
-}
-
-.navbar-nav li {
-  margin-left: 20%;
-}
-
-.navbar-nav li a {
-  font-size: 1.3rem;
-}
 
 .container {
   margin-top: 2%;
@@ -286,13 +295,24 @@ body {
     margin-right: 4px;
     border: 2px solid rgb(73, 128, 134);
   }
-
+  .carousel-indicators button{
+    margin-bottom: 0%;
+  }
   .container2 .left {
     margin-left: 20px;
     margin-right: 5%;
     margin-top: 10%;
   }
-
+  .collapse{
+    margin-left: 0%;
+  }
+  .nav-link{
+    margin-left: 5%;
+  }
+  .container-fluid img{
+    margin-left: 0%;
+    width: 150px;
+  }
   .left p {
     font-size: 1.1rem;
     font-family: var(--header-font);
@@ -325,7 +345,18 @@ body {
     display: none;
   }
 }
-
+.img{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.img1{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.img4{
+  margin-top: 5%;
+  margin-left: 15%;
+}
 
 .container3 {
   margin-top: 5%;
