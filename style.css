@@ -135,14 +135,6 @@ html {
   color: var(--white);
 }
 
-.gallery-item img {
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.05);
-}
-
 .col {
   cursor: pointer;
 }
@@ -424,6 +416,33 @@ html {
   right: 0;
   top: -10px;
   bottom: -10px;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 1.25rem;
+  max-width: 100%;
+}
+
+.photo-gallery .column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo img {
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
 }
 
 #main-navigation {
