@@ -60,12 +60,13 @@ const initSlider = () => {
     });
 }
 
-document.querySelectorAll(".header .nav-links").forEach(navLink => {
-    console.log(navLink);
+document.querySelectorAll(".header .nav-link").forEach(navLink => {
     navLink.addEventListener('click', e => {
         e.preventDefault();
+        e.target.closest(".navbar").querySelector(".navbar-toggler").click();
         window.scrollTo({
-            top: document.querySelector(e.target.href).top
+            top: document.querySelector(e.target.hash).offsetTop,
+            behavior: 'smooth'
         });
     });
 });
