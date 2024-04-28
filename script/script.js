@@ -4,20 +4,20 @@ const initSlider = () => {
     const sliderScrollbar = document.querySelector(".container3 .slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
-    
+
     // Handle scrollbar thumb drag
     scrollbarThumb.addEventListener("mousedown", (e) => {
         const startX = e.clientX;
         const thumbPosition = scrollbarThumb.offsetLeft;
         const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-        
-       
+
+
         const handleMouseMove = (e) => {
             const deltaX = e.clientX - startX;
             const newThumbPosition = thumbPosition + deltaX;
             const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
             const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
-            
+
             scrollbarThumb.style.left = `${boundedPosition}px`;
             imageList.scrollLeft = scrollPosition;
         }
@@ -59,6 +59,16 @@ const initSlider = () => {
         handleSlideButtons();
     });
 }
+
+document.querySelectorAll(".header .nav-links").forEach(navLink => {
+    console.log(navLink);
+    navLink.addEventListener('click', e => {
+        e.preventDefault();
+        window.scrollTo({
+            top: document.querySelector(e.target.href).top
+        });
+    });
+});
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
