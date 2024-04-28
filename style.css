@@ -349,6 +349,9 @@ body {
   margin-top: 5%;
   margin-left: 5%;
 }
+.row-cols-1 img:hover {
+  transform: scale(1.05);
+}
 .img1{
   margin-top: 5%;
   margin-left: 10%;
