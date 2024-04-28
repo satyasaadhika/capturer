@@ -1,6 +1,6 @@
 :root {
   --text-dark: #171717;
-  --text-light: #525252;
+  --text-light: #2a3890;
   --extra-light: #a3a3a3;
   --white: #ffffff;
   --max-width: 1200px;
@@ -75,7 +75,11 @@ body {
   margin-bottom: 4%;
   border: 2px dotted grey;
   background-image: url(assets/pexels-nietjuh-776635.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .section__container {
@@ -119,6 +123,7 @@ body {
 
 .gallery__btn .btn:hover {
   background-color: var(--text-light);
+  color:var(--white);
 }
 
 .gallery-item img {
@@ -231,7 +236,10 @@ body {
   cursor: pointer;
   margin-top: 5%;
 }
-
+.blog__btn .btn:hover {
+  background-color: var(--text-light);
+  color:var(--white);
+}
 .container2 {
   display: flex;
   justify-content: space-evenly;
