@@ -281,24 +281,11 @@ html {
   width: 500px;
 }
 
-.img {
-  margin-top: 5%;
-  margin-left: 5%;
-}
 
 .row-cols-1 img:hover {
   transform: scale(1.05);
 }
 
-.img1 {
-  margin-top: 5%;
-  margin-left: 10%;
-}
-
-.img4 {
-  margin-top: 5%;
-  margin-left: 15%;
-}
 
 .container3 {
   margin-top: 5%;
