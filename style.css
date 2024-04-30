@@ -507,6 +507,18 @@ html {
   .carousel-indicators button {
     margin-bottom: 0%;
   }
+  
+  .photo-gallery {
+    display: block;
+  }
+  
+  .photo-gallery .column {
+    display: block;
+    flex-direction: row;
+  }
+  .photo img {
+    margin-bottom: 3%;
+  }
 
   .container2 .left {
     margin-left: 20px;
@@ -575,14 +587,7 @@ html {
   .slide .carousel-item h5 {
     margin-bottom: 1%;
     font-size: 2rem;
-  }
-  
-  .carousel-item .text-slide {
-    margin-bottom: 0%;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
+  }  
   .button button {
     margin-bottom: 0%;
   }
